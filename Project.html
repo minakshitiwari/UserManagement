@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>User Management System</title>
+  <link rel="stylesheet" href="Project.css">
+</head>
+
+<body>
+  <div id="heading">
+    <h1>User Management System</h1>
+  </div>
+
+  <!-- Form to add user -->
+  <div id="form">
+    <div id="text">
+      <form id="userForm">
+        <div class="style">
+          <label for="name">Name:</label>
+          <input type="text" class="input" id="name" name="name" required><br><br>
+        </div>
+
+        <div class="style">
+          <label for="email">Email:</label>
+          <input type="email" class="input" id="email" name="email" required><br><br>
+        </div>
+
+        <div class="style">
+          <label for="gender">Gender:</label>
+          <input type="radio" name="gender" class="gen" value="Male">Male
+          <input type="radio" name="gender" class="gen" value="Female">Female
+        </div>
+
+        <div class="style">
+          <label for="status">Status:</label>
+          <select id="status" name="status" class="input">
+            <option value="active">Active</option>
+            <option value="inactive">Inactive</option>
+          </select><br><br>
+        </div>
+
+        <input type="submit" value="Add User" id="button">
+      </form>
+    </div>
+  </div>
+
+  <!-- Table to display user data -->
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody id="userData"></tbody>
+  </table>
+
+  <script>
+    // JavaScript to handle form submission and table population will go here
+  </script>
+</body>
+
+<script src="Project.js"></script>
+
+</html>
